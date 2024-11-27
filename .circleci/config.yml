@@ -28,7 +28,7 @@ jobs:
       - run:
           name: Test
           command: mvn -Dtest=Calculadora* test
-       # Use mvn clean and package as the standard maven build phase
+       # Step de prueba para probar las pipeline y añadir un paso más
       - run:
           name: Exito
           command: echo "Testing done"
