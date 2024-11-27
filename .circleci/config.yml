@@ -28,7 +28,10 @@ jobs:
       - run:
           name: Test
           command: mvn -Dtest=Calculadora* test
-
+       # Use mvn clean and package as the standard maven build phase
+      - run:
+          name: Exito
+          command: echo "Testing done"
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/workflows/ & https://circleci.com/docs/configuration-reference/#workflows
 workflows:
